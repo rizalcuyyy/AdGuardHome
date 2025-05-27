@@ -1,0 +1,24 @@
+name = "cf-dns-firewall"
+main = "worker.js"
+compatibility_date = "2025-05-27"
+
+[[kv_namespaces]]
+binding = "BLOCKLIST"
+id = "8f6170dd4e31401486313e06bdeb23e6"
+
+[[kv_namespaces]]
+binding = "BLOCKED_IPS"
+id = "48ae497443e44494b5233c92460f24eb"
+
+[[kv_namespaces]]
+binding = "WHITELIST_DOMAINS"
+id = "3cc050272bae4d9fae21b3e2ad361f7b"
+
+[[kv_namespaces]]
+binding = "WHITELIST_IPS"
+id = "d5544ab2d27a4a23b35ffa83d22c33da"
+
+[[d1_databases]]
+binding = "LOGS"
+database_name = "dnslogs"
+database_id = "79aa26c9-3b55-4c97-839b-2a91675696d3"
